@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project Project01-ReptileHouse">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/.."/>
+    <property name="dir.jarfile" value="C:/Users/jaswi/Desktop"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/ReptileHouseTrackingSystem.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="reptilehouse.ReptileHouseDriver"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.buildfile}/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/jaswi/.p2/pool/plugins/org.junit_4.13.0.v20200204-1500.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/jaswi/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+        </jar>
+    </target>
+</project>

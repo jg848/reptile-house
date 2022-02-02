@@ -1,0 +1,126 @@
+Running ReptileHouse.
+Creating reptile house of size 100 square meters and can have a maximum of 3 habitats.
+
+Creating habitat 'Texas Reptile Zoo'.
+Created habitat - true
+
+Creating habitat 'Mojave Desert'.
+Created habitat - true
+
+Creating habitat 'North Carolina Zoo'.
+Created habitat - true
+
+Calling method mapAllHabitats().
+Location: North Carolina -- Name: North Carolina Zoo, Natural Features: [POND, FLOWING_WATER], Species: []
+
+Location: Texas -- Name: Texas Reptile Zoo, Natural Features: [TREE_BRANCHES, FLOWING_WATER, GRASS], Species: []
+
+Location: Nevada -- Name: Mojave Desert, Natural Features: [DESERT, ROCKS], Species: []
+
+
+
+Calling method reportNaturalFeatures().
+Natural Features -- 
+Natural Feature: DESERT: 
+Habitat Mojave Desert, Maximum space available: 30
+Natural Feature: FLOWING_WATER: 
+Habitat Texas Reptile Zoo, Maximum space available: 30
+Habitat North Carolina Zoo, Maximum space available: 30
+Natural Feature: GRASS: 
+Habitat Texas Reptile Zoo, Maximum space available: 30
+Natural Feature: POND: 
+Habitat North Carolina Zoo, Maximum space available: 30
+Natural Feature: ROCKS: 
+Habitat Mojave Desert, Maximum space available: 30
+Natural Feature: TREE_BRANCHES: 
+Habitat Texas Reptile Zoo, Maximum space available: 30
+
+
+Calling method lookUpHabitat("REPTILE").
+Species REPTILE currently not inhabiting any habitat.
+
+Calling method lookUpHabitat("AMPHIBIAN").
+Species AMPHIBIAN currently not inhabiting any habitat.
+
+Calling method printSignForHabitat("Texas Reptile Zoo").
+Texas Reptile Zoo
+Type of Species in habitat - Species Type not assigned.
+Total number of Species currently inhabiting - 0
+
+
+Calling method printSignForHabitat("Mojave Desert").
+Mojave Desert
+Type of Species in habitat - Species Type not assigned.
+Total number of Species currently inhabiting - 0
+
+
+Calling method printSignForHabitat("North Carolina Zoo").
+North Carolina Zoo
+Type of Species in habitat - Species Type not assigned.
+Total number of Species currently inhabiting - 0
+
+
+Adding animal Gray Treefrog into Reptile House.
+Added animal into habitat - true
+
+Adding animal Desert Tortoise into Reptile House.
+Added animal into habitat - true
+
+Adding animal American Alligator into Reptile House.
+Added animal into habitat - true
+
+Calling method reportNaturalFeatures().
+Natural Features -- 
+Natural Feature: DESERT: 
+Habitat Mojave Desert, Maximum space available: 25
+Natural Feature: FLOWING_WATER: 
+Habitat Texas Reptile Zoo, Maximum space available: 29
+Habitat North Carolina Zoo, Maximum space available: 20
+Natural Feature: GRASS: 
+Habitat Texas Reptile Zoo, Maximum space available: 29
+Natural Feature: POND: 
+Habitat Mojave Desert, Maximum space available: 25
+Habitat North Carolina Zoo, Maximum space available: 20
+Natural Feature: ROCKS: 
+Habitat Mojave Desert, Maximum space available: 25
+Natural Feature: TREE_BRANCHES: 
+Habitat Texas Reptile Zoo, Maximum space available: 29
+
+
+Calling method lookUpHabitat("REPTILE").
+Habitat(s) that house REPTILE are: 
+Mojave Desert
+North Carolina Zoo
+
+
+Calling method lookUpHabitat("AMPHIBIAN").
+Habitat(s) that house AMPHIBIAN are: 
+Texas Reptile Zoo
+
+
+Calling method printSignForHabitat("Texas Reptile Zoo").
+Texas Reptile Zoo
+Type of Species in habitat - AMPHIBIAN
+Total number of Species currently inhabiting - 1
+Species name: Gray Treefrog, Description: Gray treefrogs have a white spot beneath each eye and a dark stripe from the rear of the eyes to the front of the legs., Size: SMALL, Poisonous: false, Endangered: false, Extinct: false, Can live with other species: false, Frequency - 1
+
+
+Calling method printSignForHabitat("Mojave Desert").
+Mojave Desert
+Type of Species in habitat - REPTILE
+Total number of Species currently inhabiting - 1
+Species name: Desert Tortoise, Description: Desert tortoises dig underground burrows in order to hide from the sun in the deep desert., Size: MEDIUM, Poisonous: false, Endangered: false, Extinct: false, Can live with other species: false, Frequency - 1
+
+
+Calling method printSignForHabitat("North Carolina Zoo").
+North Carolina Zoo
+Type of Species in habitat - REPTILE
+Total number of Species currently inhabiting - 1
+Species name: American Alligator, Description: American alligator is capable of biting through a turtle's shell or a moderately sized mammal bone., Size: LARGE, Poisonous: false, Endangered: false, Extinct: false, Can live with other species: false, Frequency - 1
+
+
+Calling method indexOfSpecies().
+
+Species: American Alligator, Location(s): [North Carolina]
+Species: Desert Tortoise, Location(s): [Nevada]
+Species: Gray Treefrog, Location(s): [Texas]
